@@ -7,6 +7,9 @@ const services = {
     signin: (data) => apiClient.post(ENDPOINTS.AUTH.SIGNIN, data),
     signout: () => apiClient.get(ENDPOINTS.AUTH.SIGNOUT),
     sendOtp: (data) => apiClient.post(ENDPOINTS.AUTH.SEND_OTP, data),
+    verifyOtp: (data) => apiClient.post(ENDPOINTS.AUTH.VERIFY_OTP, data),
+    resetPassword: (data) =>
+      apiClient.post(ENDPOINTS.AUTH.RESET_PASSWORD, data),
   },
 };
 

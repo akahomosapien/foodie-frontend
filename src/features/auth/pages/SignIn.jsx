@@ -6,6 +6,7 @@ import services from "@/api/services";
 // import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 // import { auth } from "@/shared/utils/firebase";
 import { ClipLoader } from "react-spinners";
+import { useNavigate } from "react-router-dom";
 // import { setUserData } from "@/features/user/user.slice";
 
 const SignIn = () => {
@@ -17,7 +18,7 @@ const SignIn = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   // const dispatch = useDispatch();
 
   const handleChange = (e) => {
@@ -121,7 +122,7 @@ const SignIn = () => {
 
           <div
             className="text-right text-purple-600 font-medium cursor-pointer"
-            // onClick={() => navigate("/forgot-password")}
+            onClick={() => navigate("/forgot-password")}
           >
             Forgot Password
           </div>
@@ -179,7 +180,7 @@ const SignIn = () => {
           Want to create a new account?
           <span
             className="text-purple-600 px-2 cursor-pointer"
-            // onClick={() => navigate("/signup")}
+            onClick={() => navigate("/signup")}
           >
             Sign Up
           </span>

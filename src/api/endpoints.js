@@ -4,6 +4,8 @@ const ENDPOINTS = {
     SIGNIN: "/auth/signin",
     SIGNOUT: "/auth/signout",
     SEND_OTP: "/auth/send-otp",
+    VERIFY_OTP: "/auth/verify-otp",
+    RESET_PASSWORD: "/auth/reset-password",
   },
 };
 
